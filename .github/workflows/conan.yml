@@ -1,4 +1,4 @@
-name: CMake on a single platform
+name: Conan on self-hosted Linux
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: [Linux,self-hosted]
 
     steps:
     - uses: actions/checkout@v4
