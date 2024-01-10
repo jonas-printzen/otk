@@ -1,0 +1,4 @@
+build/
+*.o
+CMakeUserPresets.json
+compile_flags.txt
