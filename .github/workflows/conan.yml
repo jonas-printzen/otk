@@ -21,7 +21,9 @@ jobs:
 
     - name: Configure conan
       # working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: conan install --build=missing -s build_type=${{env.BUILD_TYPE}}
+      run: 
+        - echo $PWD
+        - conan install --build=missing -s build_type=${{env.BUILD_TYPE}}
 
     - name: Build
       # working-directory: ${{env.GITHUB_WORKSPACE}}
