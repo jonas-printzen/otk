@@ -25,5 +25,5 @@ jobs:
 
     - name: Build
       # working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: conan build . -s build_type= ${{env.BUILD_TYPE}}
+      run: conan build . -s build_type=${{env.BUILD_TYPE}}
 
